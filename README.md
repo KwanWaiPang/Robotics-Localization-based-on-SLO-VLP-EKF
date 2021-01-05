@@ -14,38 +14,39 @@ If you want to install a ubuntu system under your original Windows system. You c
 ## ROS melodic Installation
 [Reference source](http://wiki.ros.org/melodic/Installation/Ubuntu)
 1. Add the source from "packages.ros.org" to the source list of the target computer.
-'''shell
+
+```shell
 sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
-'''
+```
 2. Set key:
-'''shell
+```shell
 sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654
-'''
+```
 3. Source Update
-'''shell
+```shell
 sudo apt update
-'''
+```
 4. Desktop environment installation
 The complete installation includes ROS, rqt, rviz, robot-generic libraries, 2D/3D simulators 和 2D/3D perception and so on.
-'''shell
+```shell
 sudo apt install ros-melodic-desktop-full 
-'''
+```
 5. ROS desktop Initialization:
 You need to intialize the rosdep before using. 
-'''shell
+```shell
 sudo rosdep init
 rosdep update
-'''
+```
 if it shows "the command cannot be found.". Then you need to install rospack-tools and then run the intialization again.
-'''shell
+```shell
 sudo apt install rospack-tools.
-'''
+```
 6. Environment variables setting:
 Add the environment variables of the rosdep in .bashrc so it can be activated when a new shell is opened. 
 * first method:
-'''shell
+```shell
 echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc
-'''
+```
 * second method:
 Using the text editor like VScode, gedit to open the .bashrc file and then add the sentence "source /opt/ros/melodic/setup.bash" at the end of this file.
 
@@ -55,27 +56,27 @@ Using the text editor like VScode, gedit to open the .bashrc file and then add t
 1. Edit the /opt/ros/melodic/setup.bash file to config the enviroment:
 Add the network settings: Add "export ROS_HOSTNAME=xxx.xxx.xxx.xxx" and "export ROS_MASTER_URI=http://xxx.xxx.xxx.xxx:11311" in the end of setup.bash file. The first is the ip address of your computer in the local area network. The second is the ip address of the master node.
 After all enviroment settings are completed, running the following command to activate the settings:
-'''shell
+```shell
 source /opt/ros/melodic/setup.bash 
-'''
+```
 2. Install the dependent package
-'''shell
+```shell
 sudo apt install ros-melodic-desktop-full ros-melodic-joy ros-melodic-teleop-twist-joy ros-melodic-teleop-twist-keyboard ros-melodic-laser-proc ros-melodic-rgbd-launch ros-melodic-depthimage-to-laserscan ros-melodic-rosserial-arduino ros-melodic-rosserial-python ros-melodic-rosserial-server ros-melodic-rosserial-client ros-melodic-rosserial-msgs ros-melodic-amcl ros-melodic-map-server ros-melodic-move-base ros-melodic-urdf ros-melodic-xacro ros-melodic-compressed-image-transport ros-melodic-rqt-image-view ros-melodic-gmapping ros-melodic-navigation ros-melodic-interactive-markers ros-melodic-turtlebot3-gazebo
-'''
+```
 3. create the workspace in ~/ path
-'''shell
+```shell
 mkdir ~/catkin_ws
 cd catkin_ws
 mkdir src
 cd src
 mkdir turtlebot3
-'''
+```
 download the zip file form [link_1](https://github.com/KwanWaiPang/SLO-VLP-EKF/tree/master) and unzip into turtlebot3 folder.
 download the zip file from [link_2](https://github.com/KwanWaiPang/SLO-VLP-EKF/blob/main/turtlebot3_msgs.zip) and unzip into catkin_ws folder.
 4. locate to the path ~/catkin_ws and make
-'''shell
+```shell
 cd ~/catkin_ws && catkin_make
-'''
+```
 5. Environment variables setting:
 Add "source ~/catkin_ws/devel/setup.bash" for the enviroment varibles for the robot.
 Add "export TURTLEBOT3_MODEL=burger" for robot configuration in ~/.bashrc file.
