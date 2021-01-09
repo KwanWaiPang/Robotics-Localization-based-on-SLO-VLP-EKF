@@ -73,6 +73,7 @@ mkdir turtlebot3
 ```
 download the zip file form [link_1](https://github.com/KwanWaiPang/SLO-VLP-EKF/tree/master) and unzip into turtlebot3 folder.
 download the zip file from [link_2](https://github.com/KwanWaiPang/SLO-VLP-EKF/blob/main/turtlebot3_msgs.zip) and unzip into catkin_ws folder.
+
 4. locate to the path ~/catkin_ws and make
 ```shell
 cd ~/catkin_ws && catkin_make
@@ -89,12 +90,11 @@ Add "alias cw='cd ~/catkin_ws'
 alias cs='cd ~/catkin_ws/src'
 alias cm='cd ~/catkin_ws && catkin_make -DCMAKE_BUILD_TYPE=Debug'
 alias CM='cd ~/catkin_ws && catkin_make -DCMAKE_BUILD_TYPE=Debug'
-alias rb1='ssh ubuntu@10.79.111.186'
-alias rb2='ssh ubuntu@10.79.215.130'
+alias rb1='ssh ubuntu@xxx.xxx.xxx.xxx'
 alias ekf='roslaunch single_led EKF.launch'
 alias keyboard='roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch'"
 into ~/.bashrc file
-
+The ip address after rb1 is the ip adress of the robot we want to control.
 ## Start the robot and map:
 1. open a new terminate and input "rb1" to connect the first robot and input "start" to start the VLP program . Open another terminate and input "rb2" to connect the second robot and input "start" to start the VLP program in the second robot.
 2. Open another terminate and input "ekf" to open the map app.
