@@ -1,0 +1,7 @@
+image: /home/eeuser/map/3.pgm
+resolution: 0.0179487
+origin: [-7.3000, -10.67010, 0.000000]
+negate: 0
+occupied_thresh: 0.65
+free_thresh: 0.196
+
