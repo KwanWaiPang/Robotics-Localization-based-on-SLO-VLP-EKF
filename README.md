@@ -72,6 +72,7 @@ cd src
 mkdir turtlebot3
 ```
 download the zip file form [link_1](https://github.com/KwanWaiPang/SLO-VLP-EKF/tree/master) and unzip into turtlebot3 folder.
+![Download Page of turtlebot3](./readme_picture/link_1_download.png)
 download the zip file from [link_2](https://github.com/KwanWaiPang/SLO-VLP-EKF/blob/main/turtlebot3_msgs.zip) and unzip into catkin_ws folder.
 
 4. locate to the path ~/catkin_ws and make
