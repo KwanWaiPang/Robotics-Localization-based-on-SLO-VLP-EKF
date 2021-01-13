@@ -1,0 +1,5 @@
+1. open the launch folder 
+2. right mouse click and open terminal (at the bottom of the menu)
+3. in the terminal > rolaunch or 'sh launch_top.sh'
+4. in the terminal > roslam or 'sh launch_slam.sh'
+5. check robot connectivity through http://192.168.0.1/index.html
