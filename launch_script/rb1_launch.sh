@@ -1,6 +1,6 @@
 #!/usr/bin/expect
 set user "ubuntu"
-set ip "192.168.0.101"
+set ip "192.168.0.104"
 set password "ubuntu"
 set timeout 20
 #opensend a ssh link, the comment must begin at a new line

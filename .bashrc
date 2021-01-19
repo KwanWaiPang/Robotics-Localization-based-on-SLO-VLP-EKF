@@ -1,0 +1,29 @@
+# setting the ros system
+source /opt/ros/melodic/setup.bash
+
+# for use as host and master
+export ROS_HOSTNAME=192.168.0.200
+export ROS_MASTER_URI=http://192.168.0.100:11311
+
+# Set ROS alias command
+alias cw='cd ~/catkin_ws'
+alias cs='cd ~/catkin_ws/src'
+alias cm='cd ~/catkin_ws && catkin_make -DCMAKE_BUILD_TYPE=Debug'
+alias CM='cd ~/catkin_ws && catkin_make -DCMAKE_BUILD_TYPE=Debug'
+alias keyboard1='ROS_NAMESPACE=tb_1 rosrun turtlebot3_teleop turtlebot3_teleop_key'
+alias keyboard2='ROS_NAMESPACE=tb_2 rosrun turtlebot3_teleop turtlebot3_teleop_key'
+alias get_coordinate='rosrun single_led getpositioning_3rb '
+
+
+
+# to save slam map for future use, cd to the map directory
+alias save_map='rosrun map_server map_saver'
+
+alias rolaunch='cd ~/Desktop/launch_script && sh launch_top.sh'
+alias roslam='cd ~/Desktop/slam_script && sh launch_slam.sh'
+alias rosmart='cd ~/Desktop/smart_installation && sh launch_samrt.sh'
+alias keyboard='roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch'
+
+source ~/catkin_ws/devel/setup.bash
+export TURTLEBOT3_MODEL=burger
+

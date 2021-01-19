@@ -1,0 +1,7 @@
+image: ICDC.pgm
+resolution: 0.0119658
+origin: [-5.0000, -7.0100, 0.000000]
+negate: 0
+occupied_thresh: 0.65
+free_thresh: 0.196
+
