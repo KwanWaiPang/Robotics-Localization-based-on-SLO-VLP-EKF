@@ -99,3 +99,4 @@ The ip address after rb1 is the ip adress of the robot we want to control.
 ## Start the robot and map:
 1. open a new terminate and input "rb1" to connect the first robot and input "start" to start the VLP program . Open another terminate and input "rb2" to connect the second robot and input "start" to start the VLP program in the second robot.
 2. Open another terminate and input "ekf" to open the map app.
+3.dfd
