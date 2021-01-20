@@ -1,6 +1,6 @@
 #! /bin/bash
 # for use as the master, uncomment below 
-gnome-terminal --window -e 'bash -c "roscore;exec bash"'
+# gnome-terminal --window -e 'bash -c "roscore;exec bash"'
 ###############################################################
 gnome-terminal --window -e 'bash -c "expect rb_launch.sh;exec bash"'
 sleep 10s

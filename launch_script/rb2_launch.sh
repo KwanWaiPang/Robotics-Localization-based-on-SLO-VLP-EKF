@@ -1,7 +1,7 @@
 #!/usr/bin/expect
 # update ip address and need to change tb_1, tb_2, and tb_3 
 set user "ubuntu"
-set ip "192.168.0.102"
+set ip "192.168.0.106"
 set password "ubuntu"
 set timeout 20
 #opensend a ssh link, the comment must begin at a new line

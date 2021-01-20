@@ -1,7 +1,7 @@
 #!/usr/bin/expect
 set user "ubuntu"
 # keep for use as host and master
-set ip "192.168.0.101"
+set ip "192.168.0.104"
 # robot through another master
 # set ip "10.79.111.186"
 set password "ubuntu"
