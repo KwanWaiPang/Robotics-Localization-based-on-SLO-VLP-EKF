@@ -181,10 +181,10 @@ if __name__=="__main__":
             control_angular_vel = makeSimpleProfile(control_angular_vel, target_angular_vel, (ANG_VEL_STEP_SIZE/2.0))
             twist.angular.x = 0.0; twist.angular.y = 0.0; twist.angular.z = control_angular_vel
 
-            pub.publish(twist)
-            #pub0.publish(twist)
-            #pub1.publish(twist)
-            #pub2.publish(twist)
+          
+            pub0.publish(twist)
+            pub1.publish(twist)
+            pub2.publish(twist)
 
     except:
         print(e)
