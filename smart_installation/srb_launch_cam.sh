@@ -8,7 +8,7 @@ spawn ssh $user@$ip
 expect {
 	"(yes/no)?" { send "yes\r"; exp_continue;}
 	"password:" { send "$password\r"; exp_continue;}
-	"*@*" { send "roslaunch usb_cam usb_cam.launch\r"; }
+	"*@*" { send "roslaunch web_cam web_cam.launch\r"; }
 }
 interact
 
